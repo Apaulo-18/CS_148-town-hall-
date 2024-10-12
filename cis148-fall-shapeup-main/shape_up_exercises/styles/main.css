@@ -1,0 +1,82 @@
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+	width: 900px;
+	margin: 0em auto 2em auto;
+	border: 3px solid steelblue;
+	box-shadow: 0px 20px 30px black;
+}
+	
+/* the styles for the links*/
+a:link { Color: maroon}
+a:visited { color: maroon;}	
+a:hover { color: steelblue;}
+
+
+/* the style for the aside*/
+ul { line-height: 1.5em;}
+li { font-size: 100%;}
+li { font-weight: bold;}
+
+li{
+	a:link { Color: steelblue}
+	a:visited { color: steelblue;}	
+	a:hover { color: maroon;}
+}
+
+/*the styles for the header*/
+header img { 
+	float: left;
+	padding: 1em;
+	width: 7.5em;
+	height: 6em;
+
+}
+header {
+	background-image: linear-gradient(to bottom, white 0%, #b0c4de 100%);
+	padding: 20px;
+}
+header h1 {
+	margin: .5em 0 0 4.5em;
+	font-size: 250%;
+	color: steelblue;
+	text-align: left;
+	text-shadow: 3px 3px 4px steelblue;
+	font-style: italic;
+}
+header h2 {
+	margin-left: 8em;
+	font-size: 150%;
+	color: black;
+	text-align: left;
+	
+}
+
+/*the styles for the main content*/
+main { clear: left;
+	border: 3px solid steelblue;
+	padding: 2em;
+	padding-top: 0em;
+}
+
+
+main h1 { font-size: 170%;}
+main h2 { font-size: 140%;}
+main h3 { font-size: 120%;}
+
+main h1, h2, h3 { margin-bottom: .5em;}
+
+
+/*the styles for the footer*/
+footer {
+
+	background: steelblue 100%;
+	padding: 5px;
+	
+}
+
+footer p {
+	font-size: 80%;
+	text-align: center;
+    color: white;
+}
