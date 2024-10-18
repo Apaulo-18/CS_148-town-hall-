@@ -47,7 +47,7 @@ main {
 article {
 	padding: 0 20px 20px 20px;
 	width: 575px;
-	float: right;	
+	float: left;	
 	column-count: 2;
 	column-gap: 15px;
 }
