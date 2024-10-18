@@ -44,27 +44,35 @@ header img {
 main {
 	clear: left;
 }
-section {
+article {
 	padding: 0 20px 20px 20px;
 	width: 575px;
 	float: right;	
+	column-count: 2;
+	column-gap: 15px;
 }
-section h1 {
+article h1 {
 	color: #800000;
 	font-size: 150%;
 	margin: 0;
 	padding: .5em 0 .5em;
+	column-span: all;
 }
-section h2 {
+article h2 {
 	font-size: 120%;
 	padding-bottom: .25em;
+	column-span: all;
+	
 }
 article p {
-	padding-bottom: .5em;
+	
+	padding: .5em 0 .5em 0;
+	
 }
 article img {
-	float: right;
-	margin: .25em 0 1em 1em;
+	float: left;
+	width: 275px;
+	margin: .25em 1em 1em 0;
 	border: 1px solid black;
 }
 aside {
