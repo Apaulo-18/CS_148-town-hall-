@@ -9,7 +9,7 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -46,13 +46,13 @@ main {
 /* the styles for the section */
 section {
 	width: 525px;
-	float: right;
-	padding: 0 20px 20px 20px;
+	float: left;
+	padding: 0 20px 20px 0px;
 }
 section h1 {
 	font-size: 150%;
 	padding: .5em 0 .25em 0;
-	margin: 0;               /* If you remove this, the margins in normalize.css will be applied. */
+	margin: auto;               /* If you remove this, the margins in normalize.css will be applied. */
 }
 section h2 {
 	color: #800000;
@@ -93,11 +93,18 @@ article img {
 }
 
 /* the styles for the aside */
-aside {
+#sidebarA {
 	width: 215px;
-	float: right;
+	float: left;
 	padding: 0 0 20px 20px;
 }
+
+#sidebarB {
+	width: 215px;
+	float: right;
+	padding: 0 0 20px 0px;
+}
+
 aside h2 {
 	color: #800000;
 	font-size: 130%;
