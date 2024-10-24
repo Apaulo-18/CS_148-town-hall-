@@ -90,8 +90,36 @@ aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
-aside img {
-	padding-bottom: 1em;
+
+
+
+#nav_list ul {
+	list-style-type: none; 
+	margin-left: .25em; 
+	margin-bottom: 1.5em; 
+	
+}
+
+#nav_list ul li { 
+	background-image: url("../images/right.jpg");		/*right arrow button image*/
+	background-repeat: no-repeat;						/*sets the background to one image*/
+	background-position: 95% 50%;						/*95% left, 50% top = middle*/
+	padding:.25em .5em .5em .5em; 
+	margin-bottom: 1em;
+	border: 2px solid black; 
+	color: black; 
+	font-size:100%; 
+	text-align: left; font-weight: bold;
+	border-radius: 10px 10px 10px 10px; 
+	box-shadow: 3px 3px 0px 0px red;
+}
+
+#nav_list ul li a { 
+	display: block;
+	padding: .25em .5em .5em 0; 
+	text-decoration: none; 
+	font-weight: bold; 
+	color: black; 
 }
 
 /* the styles for the footer */
