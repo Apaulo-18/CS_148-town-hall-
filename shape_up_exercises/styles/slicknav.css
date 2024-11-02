@@ -5,9 +5,8 @@
 .slicknav_btn {
 	position: relative;
 	display: block;
-	vertical-align: middle;
 	float: right;
-	padding: 0.438em 0.625em 0.438em 0.625em;
+	padding: 3px;
 	line-height: 1.125em;
 	cursor: pointer;
 }
@@ -64,10 +63,7 @@
 .slicknav_menu:after {
 	clear: both
 }
-/* IE6/7 support */
-.slicknav_menu {
-*zoom: 1
-}
+
 /* 
     User Default Style
     Change the following styles to modify the appearance of the menu.
@@ -84,7 +80,7 @@
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	background-color: #222222;
+	background-color: steelblue;
 }
 /* Button Text */
 .slicknav_menu .slicknav_menutxt {
@@ -97,7 +93,7 @@
 	background-color: #f5f5f5;
 }
 .slicknav_menu {
-	background: #4c4c4c;
+	background: steelblue;
 	padding: 5px;
 }
 .slicknav_nav {
@@ -132,14 +128,14 @@
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	background: #ccc;
+	background: lightsteelblue;
 	color: #fff;
 }
 .slicknav_nav a:hover {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	background: #ccc;
+	background: lightsteelblue;
 	color: #222;
 }
 .slicknav_nav .slicknav_txtnode {
