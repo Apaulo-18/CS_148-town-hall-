@@ -58,7 +58,10 @@ section h1 {
 }
 section p {
 	padding-bottom: .5em;
+	height: 260px;
+	width: 260px;
 }
+
 
 /* the styles for the article */
 article {
@@ -73,6 +76,19 @@ article img {
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
 }
+
+#roll {
+	background-image: url(../images/sampson_dinosaur.jpg);		
+}
+	
+
+#roll:hover {
+	background-image: url(../images/sorkin_desk260.jpg);
+	background-repeat: no-repeat;
+	height: 260px;
+	width: 260px;
+}
+
 
 /* the styles for the aside */
 aside {
