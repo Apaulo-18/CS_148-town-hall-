@@ -81,6 +81,8 @@ header img {
 
 .navbar ul li #home { color: black;}
 
+.navbar ul li #stress { color: black;}
+
 /*the styles for the main content*/
 main { 
 	clear: both;
@@ -88,28 +90,32 @@ main {
 }
 
 section {
-	width: 525px;
+	width: 575px;
 	float: right;
-	padding: 0 20px 20px 5px;
+	padding: 0 20px 20px 0px;
 }
 
-section h1 {
-	font-size: 150%;
-	padding: .5em 0 .25em 0;
+#fnt {
+	font-family: "joschmi", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 225%;
+	padding: .25em 0 .25em 0;
 	margin: auto;               /* If you remove this, the margins in normalize.css will be applied. */
 }
-section h2 {
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
-}
 
-section h3 { color: maroon;}
+section h2 { 
+	font-size: 90%;
+	color: maroon;}
 section p {
-	padding-bottom: .5em;
+	padding:0 .5em .5em 0;
 }
-section blockquote {
-	padding: 0 2em;
-	font-style: italic;
+section img {
+	outline: auto black;
+	float: right;
+	width: 155px;
+	height: 125px;
+	margin: 0px 10px 10px 0;
 }
 
 
@@ -129,7 +135,7 @@ aside{
 aside h2{
     color: maroon;
 	font-size: 150%;
-	padding: .5em 0 0em 0;
+	padding: .5em 0 0 0;
 }
 aside ul{
 	padding-left: .75em;
@@ -141,11 +147,13 @@ li {
 	font-weight: bold;
 }
 
-#taco:link, #taco:visited { 
+.sidelist ul li a { 
 	Color: steelblue;
 	text-decoration: none;
 }
-#taco:hover, #taco:focus { color: maroon;}
+.sidelist ul li a:hover, .sidelist ul li a:focus { 
+	color: maroon;
+}
 
 /*the styles for the footer*/
 footer {

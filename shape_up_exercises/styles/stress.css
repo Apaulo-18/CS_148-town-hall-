@@ -16,7 +16,7 @@ body {
 .container { 
 	display: grid;
 	grid-template-columns: .5fr 1fr;
-	grid-template-rows: 8em 1em 30em 1em;
+	grid-template-rows: 8em 1em 30em 2em;
 	grid-template-areas: 
 		"header header"
 		"navbar navbar"
@@ -28,11 +28,6 @@ body {
 	display: none;
 	padding: 3px;
 }
-
-
-
-
-
 
 /*the styles for the header*/
 header {
@@ -106,7 +101,6 @@ header img {
 	color: white; 
 	font-weight: bold;
 }
-
 .navbar ul li a:hover {
     background-color: lightsteelblue;
 } 
@@ -134,7 +128,7 @@ section {
 
 section h1 {
 	font-size: 150%;
-	padding: .5em 0 .25em 0;
+	padding-top: 1em;
 	margin: auto;               /* If you remove this, the margins in normalize.css will be applied. */
 }
 section h2 {
@@ -160,11 +154,10 @@ main h1, h2, h3 { margin-bottom: .5em;}
 
 /* the styles for the aside */
 aside{
-
-	
 	grid-area: sidelist;
     float: left;
     width: 95%;           /* 245/1024 x 100 */
+	padding-top: 1em;
 	margin-left: 1.5em;	
 }
 
@@ -197,7 +190,7 @@ ul { line-height: 1.5em;}
 footer {
 	grid-area: footer;
 	background: steelblue 100%;
-	padding: 15px;
+	padding: 10px 0 20px 0;
 	clear: both;
 	
 }

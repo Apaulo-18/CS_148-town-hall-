@@ -114,7 +114,10 @@ section h2 {
 	padding: .5em 0 .25em 0;
 }
 
-section h3 { color: maroon;}
+section h3 { 
+	color: maroon;
+	padding: .5em 0 .25em 0;
+}
 section p {
 	padding-bottom: .5em;
 }
@@ -122,7 +125,7 @@ section blockquote {
 	padding: 0 2em;
 	font-style: italic;
 }
-
+section img { float: inline-start;}
 
 main h1 { font-size: 170%;}
 main h2 { font-size: 140%;}
@@ -162,17 +165,19 @@ li {
 
 /*the styles for the footer*/
 footer {
-
 	background: steelblue 100%;
 	padding: 15px;
 	clear: both;
-	
 }
 
 footer p {
 	font-size: 80%;
 	text-align: center;
     color: white;
+}
+#cred { 
+	padding-top: 5px;
+	color: black;
 }
 
 /* Media query for 850px */
