@@ -29,6 +29,11 @@ header h1 {
 	text-align: left;
 	text-shadow: 3px 3px 4px steelblue;
 	font-style: italic;
+	animation: moveright 8s ease-in-out 1s 1 alternate; 
+} 
+@keyframes moveright { 
+	from { margin-left: 20%; }
+	to { margin-left: 75%; color: maroon; }
 }
 
 header h2 {
@@ -125,8 +130,16 @@ section blockquote {
 	padding: 0 2em;
 	font-style: italic;
 }
-section img { float: inline-start;}
-
+section img {
+	float: inline-start;
+	width: 32px;
+	transition: width 2s ease-in-out;
+}	
+section img:hover {
+	/*transform: scale(2);*/	
+	/*transition-duration: 2s;*/
+	width: 64px;
+}
 main h1 { font-size: 170%;}
 main h2 { font-size: 140%;}
 main h3 { font-size: 120%;}
