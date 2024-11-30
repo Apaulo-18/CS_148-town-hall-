@@ -15,7 +15,12 @@ body {
     background-color: #fffded;
 }
 a:focus, a:hover {
-	font-style: italic;
+	transition: 3s; 
+	transform: rotateX(360deg);
+	 
+}
+a:focus, a:hover {
+	font-style: italic;	
 }
 /* the styles for the header */
 header {
@@ -35,6 +40,12 @@ header h3 {
 header img {
 	float: left;
 	padding: 0 30px;
+	animation: bounce .5s ease-in 2s 8 alternate;
+}
+@keyframes bounce {
+	from {padding: 0 30px;}
+	to {padding: 0 10px;}
+	
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
@@ -76,9 +87,9 @@ article img {
 
 /* the styles for the aside */
 aside {
-	width: 215px;
+	width: 25.29%;
 	float: right;
-	padding: 0 0 20px 20px;
+	padding: 0 0 20px 2.35%;
 }
 aside h2 {
 	color: #800000;
@@ -90,13 +101,43 @@ aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
-aside img {
-	padding-bottom: 1em;
+
+#nav_list ul {
+	list-style-type: none; 
+	margin-left: .25em; 
+	margin-bottom: 1.5em; 
 }
+
+#nav_list ul li { 
+	background-image: url("../images/right.jpg");		/*right arrow button image*/
+	background-repeat: no-repeat;						/*sets the background to one image*/
+	background-position: 95% 50%;						/*95% left, 50% top = middle*/
+	padding:.25em .94% .5em .94%; 
+	margin-bottom: 1em;
+	border: 2px solid black; 
+	font-size:100%; 
+	text-align: left; font-weight: bold;
+	border-radius: 10px 10px 10px 10px; 
+	box-shadow: 3px 3px 0px 0px #800000;
+}
+
+#nav_list ul li a { 
+	display: block;
+	padding: .25em .94% .5em 0; 
+	text-decoration: none; 
+	font-weight: bold; 
+	color: black;
+	 
+}
+#nav_list ul li a.current {
+	color: #800000;
+}
+
 
 /* the styles for the footer */
 footer {
-	background-color: #931420;
+	width: 100%;
+	background-color: #800000;
 	clear: both;
 
 }
