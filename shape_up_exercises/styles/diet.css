@@ -4,7 +4,7 @@
 }
 
 body {
-	font-family: "aladin", sans-serif;
+	font-family: sans-serif;
 	font-size: 100%;
 	width: 900px;
 	margin: 0em auto; 
@@ -79,7 +79,9 @@ header img {
     background-color: lightsteelblue;
 } 
 
-.navbar ul li #meals { color: black;}
+.navbar ul li #home { color: black;}
+
+.navbar ul li #diet { color: black;}
 
 /*the styles for the main content*/
 main { 
@@ -88,96 +90,45 @@ main {
 }
 
 section {
-	width: 525px;
+	width: 575px;
 	float: right;
 	padding: 0 20px 20px 0px;
 }
-fieldset {
-	border: 2px solid black; 
-	padding-top: .5em;
-	} 
-legend {
-	font-weight: bold; 
-	font-size: 85%; 
-	margin-left: .5em;
-	}
-
-label, input, select { 
-	font-size: 90%;
-	} 
-#self input:required {
-	border: 3px solid red;
-}
-#self label {
-	float: left; 
-	width: 8em;
-	padding-left: 2em;
-}
-#self input, select{
-	width: 15em;
-	margin-left: .5em; 
-	margin-bottom: .5em;
-}
-#life p {
-	font-size: 90%;
-	margin: .2em 0 .2em 1em;
-}
-#life input {
-	margin-left: 3em;
-	margin-bottom: 1em;
-}
-#food input {
-	margin-left: 1em;
-}
-#food p {
-	margin: .2em 0 .2em 1em;
-}
-#food input {
-	margin-left: .5em;
-}
-#food textarea { 
-	height: 5em;
-	width: 25em;
-	margin: 1em 3em;
-}
-#comment p {
-	margin: .2em 0 .2em 1em;
-}
-#comment textarea {
-	height: 5em;
-	width: 25em;
-	margin: 1em 3em;
-}
-
-#button input{
-	width: 8em;
-}
-#submit {margin: .5em 0 1.5em 5em;}	
 
 section h1 {
-	font-family: aladin;
-	font-size: 150%;
-	padding: .5em 0 .25em 0;
-	margin: auto;               /* If you remove this, the margins in normalize.css will be applied. */
+	padding-top: 1em;
 }
 
-section h2 { color: maroon;}
+section h2,  h3 { 
+	padding-top: .5em;
+	font-size: 90%;
+	color: maroon;
+}
+
 section p {
 	padding:0 .5em .5em 0;
 }
 
 section ul li {
-    margin-left: 2em;
+    list-style-type: none;
+	display: inline;
 }
 
+#image_list img {
+	width: 100px;
+}
+
+
+
 main h1 { font-size: 170%;}
-main h2 { font-size: 140%;}
+main h2 { font-size: 120%;}
 main h3 { font-size: 120%;}
 
 main h1, h2, h3 { margin-bottom: .5em;}
 
 /* the styles for the aside */
 aside{
+	padding-top: 1em;
     float: left;
     width: 245px;
 	margin-left: 2.5em;	
@@ -193,10 +144,7 @@ aside ul{
 }
 
 ul { line-height: 1.5em;}
-li { 
-	font-size: 100%;
-	font-weight: bold;
-}
+li { font-size: 100%;}
 
 .sidelist ul li a { 
 	Color: steelblue;
@@ -208,12 +156,11 @@ li {
 
 /*the styles for the footer*/
 footer {
-
+	margin-top: .2em;
 	background: steelblue 100%;
 	padding: 5px;
 	clear: both;
-	
-}
+	}
 
 footer p {
 	font-size: 80%;
