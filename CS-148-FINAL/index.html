@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Outdoor Adventures</title>
+	<link rel="shortcut icon" href="images/trees.png">
+	<link rel="stylesheet" href="sheets/main.css">
+    <link rel="stylesheet" href="sheets/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="JS/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.navbar').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+	<header>
+		<a href="index.html"><img src="images/hiking.png" alt="adventure_logo" height="80"></a>
+		<h1>LA County Outdoor Adventures</h1>
+		<h3>Outdoor Adventures Await!</h3>
+	</header>
+  
+    <nav class="navbar">
+        <ul>
+            <li><a id="home" href="index.html">Home</a></li>                
+            <li><a href="locations/SSmount.html">Santa Susana Mountains</a></li>
+            <li><a href="locations/SGBmount.html">San Gabriel Mountains</a></li>  
+            <li><a href="form/groups.html">Find a Group</a></li>   
+        </ul>
+    </nav>
+    <nav id="mobile_menu"></nav>
+
+    <main>
+            
+        <section>
+            <h1>Outdoor Activities!</h1>
+				<p>In today’s fast-paced world, we often forget the power of nature and the peace it brings. Hiking, backpacking, and mountain biking offer the perfect escape—allowing you to disconnect from technology, immerse yourself in stunning landscapes, and reconnect with your inner self. Whether you're seeking adventure, a fitness challenge, or simply a peaceful retreat, hiking, backpacking, and mountain biking offers it all. It boosts your mental and physical well-being, sparks creativity, and helps you discover the beauty of the world around you. So why not step outside and experience the transformative power of nature? The trails are waiting for you.</p>
+            
+            <img src="images/hikingicon.png" alt="go_hiking">
+			<h2>Why you should hike</h2>
+				<p>Partaking in hiking offers a range of physical and mental benefits to a person. It’s a great way to improve your cardiovascular health, build strength and lose weight. Hiking induces stress relief and allows you to escape the trappings of modern society by spending time in nature. It's a good way to experience quick bursts of accomplishment when you finish a trail. Whether for fitness, mental clarity, or the joy of exploring new places, hiking is a versatile activity that offers numerous benefits for the body and mind.</p>
+           
+            <img src="images/backpack.png" alt="go_backpacking">
+			<h2>Why you should go backpacking</h2>
+				<p>Backpacking can be an incredibly rewarding experience, but it also comes with challenges. For example, you have a limited weight capacity, meaning you can only bring what you can carry. Navigation can be difficult because you're further in the back country away from well-marked trails. And don’t forget safety concerns; rescuers could take a while to get to you out in the wild. Despite these challenges, many backpackers find that the rewards of the experience—such as the sense of adventure, physical fitness, and connection to nature—make overcoming these difficulties worthwhile. With proper preparation, training, and knowledge, these obstacles can be managed or avoided.</p>
+
+            <img src="images/mountain-bike.png" alt="go_mountain_biking">
+			<h2>Why you should mountain bike</h2>	
+				<p>Mountain biking offers a range of exciting physical, mental, and emotional benefits, making it a rewarding outdoor activity for many people. Like hiking, it’s great for improving cardiovascular fitness, building leg strength and weight loss. It is a good activity for adrenaline junkies and provides a great sense of accomplishment when completing a difficult obstacle. Mountain biking combines the benefits of outdoor adventure and physical fitness. So whether you’re looking for a challenging workout, an adrenaline rush, or a way to connect with nature, mountain biking offers something for everyone.</p>		
+
+        </section>
+    </main>
+        <aside class="sidelist">
+            <h2>Other Popular Trails</h2>
+            <ul id="alist">
+                <li><a href="https://www.alltrails.com/us/california/burbank" target="_blank"> Best trails in Burbank</a>
+					<img src="images/burbank.webp" alt="Scout Camp and Stough Canyon Loop" height="50" width="50"></li>
+                <li><a href="https://www.alltrails.com/us/california/pasadena" target="_blank"> Best trails in Pasadena</a>
+					<img src="images/pasadena.webp" alt="Switzer Falls via Gabrielino Trail" height="50" width="50"></li>
+                <li><a href="https://www.alltrails.com/us/california/malibu" target="_blank"> Best trails in Malibu</a>
+					<img src="images/malibu.webp" alt="Solstice Canyon Loop" height="50" width="50"></li>
+                <li><img src="images/santa_monica.webp" alt="Backbone Trail to Sandstone Peak and Mishe Mokwa Trail Loop" height="50" width="50">
+					<a href="https://www.alltrails.com/parks/us/california/santa-monica-mountains-national-recreation-area" target="_blank"> Best trails in Santa Monica</a></li>
+            </ul>
+        </aside>	
+	<footer>	
+		<p>&copy; 2024 LA County Adventures</p>
+        <p id="cred">Icons made by Freepik from www.flaticon.com are licensed by CC 3.0 BY<br>
+			Icons made by Smashicons from www.flaticon.com are licensed by CC 3.0 BY</p>
+	</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Outdoor Adventures</title>
+	<link rel="shortcut icon" href="images/trees.png">
+	<link rel="stylesheet" href="sheets/adventure.css">
+    <link rel="stylesheet" href="sheets/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="JS/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.navbar').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/hiking.png" alt="adventure_logo" height="80"></a>
+		<h1>LA County Outdoor Adventures</h1>
+		<h3>Outdoor Adventures Await!</h3>
+	</header>
+  
+    <nav class="navbar">
+        <ul>
+            <li><a id="home" href="index.html">Home</a></li>                
+            <li><a href="SSmount.html">Santa Susana Mountains</a></li>
+            <li><a href="SGBmount.html">San Gabriel Mountains</a></li>  
+            <li><a href="groups.html">Find a Group</a></li>   
+        </ul>
+    </nav>
+    <nav id="mobile_menu"></nav> 
+    
+    <main> 
+        <section>
+            <h1>Your submission has been recieved!</h1>
+				<p>Your submission has been recieved. Please keep a lookout for an email containing the relevant information you requested.</p>
+			<h2 id="yay">We look forward to seeing you on the trails!</h2>
+        </section>
+		<aside class="sidelist">
+			<h2>Additional resources</h2>
+			<ul>
+				<li><a href="https://www.alltrails.com/us/california/burbank" target="_blank"> Best trails in Burbank</a>
+					<img src="images/burbank.webp" alt="Scout Camp and Stough Canyon Loop" height="50" width="50"></li>
+				<li><a href="https://www.alltrails.com/us/california/pasadena" target="_blank"> Best trails in Pasadena</a>
+					<img src="images/pasadena.webp" alt="Switzer Falls via Gabrielino Trail" height="50" width="50"></li>
+				<li><a href="https://www.alltrails.com/us/california/malibu" target="_blank"> Best trails in Malibu</a>
+					<img src="images/malibu.webp" alt="Solstice Canyon Loop" height="50" width="50"></li>
+				<li><img src="images/santa_monica.webp" alt="Backbone Trail to Sandstone Peak and Mishe Mokwa Trail Loop" height="50" width="50">
+					<a href="https://www.alltrails.com/parks/us/california/santa-monica-mountains-national-recreation-area" target="_blank"> Best trails in Santa Monica</a></li>
+			</ul>
+		</aside>	
+		<footer>	
+			<p>&copy; 2024 LA County Adventures</p>
+			<p id="cred">Icons made by Freepik from www.flaticon.com are licensed by CC 3.0 BY<br>
+				Icons made by Smashicons from www.flaticon.com are licensed by CC 3.0 BY</p>
+		</footer>
+		</div>
+	</body>
+	</html>

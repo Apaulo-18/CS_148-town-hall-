@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Outdoor Adventures</title>
+	<link rel="shortcut icon" href="../images/trees.png">
+	<link rel="stylesheet" href="../sheets/groups.css">
+    <link rel="stylesheet" href="../sheets/slicknav.css">
+    
+</head>
+
+<body>
+	<header>
+		<a href="../index.html"><img src="../images/hiking.png" alt="adventure_logo" height="80"></a>
+		<h1>LA County Outdoor Adventures</h1>
+		<h3>Outdoor Adventures Await!</h3>
+	</header>
+  
+    <nav class="navbar">
+        <ul>
+            <li><a id="home" href="../index.html">Home</a></li>                
+            <li><a href="../locations/SSmount.html">Santa Susana Mountains</a></li>
+            <li><a href="../locations/SGBmount.html">San Gabriel Mountains</a></li>  
+            <li><a id="mount" href="../form/groups.html">Find a Group</a></li>   
+        </ul>
+    </nav>
+    <nav id="mobile_menu"></nav> 
+    
+    <main>
+           
+        <section>
+			<h1>Groups and Equipment Rental information</h1>
+			<p>While these activities can be solo adventures, sometimes it's fun to do them with others. Please fill out this form with your 
+                relevant information to find a group partaking in your chosen activity at your skill level. Some companies and sporting goods
+                stores provide equipment rentals. Please fill out that part of the form if needed. <b><i>You must be 18 or older or accompanied by an adult</i></b></p>
+		<form action="formsub.html">		
+        <fieldset id="self">
+            <legend>Your Information</legend>
+			<label for="fullname">*Full name:</label>
+			<input type="text" name="fullname" id="fullname" required><br><br>
+			<label for="email">*E-mail:</label>
+			<input type="email" name="email" id="email" required><br><br>
+            <label for="city">*City:</label>
+			<input type="text" name="city" id="city" required><br><br>
+            <label for="zipcode">*Zip code:</label>
+            <input type="text" id="zip" maxlength="5" placeholder="Five Digits" required><br><br>
+            <label for="gender">Gender:</label>
+			<select id="gender">
+				<optgroup label="Gender">
+                    <option value="select a gender">Select a Gender</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="nonbinary">Non Binary</option>
+					<option value="other">Other</option>
+				</optgroup>
+			</select><br><br>
+        </fieldset>
+        
+        <fieldset id="life">
+            <legend>Activities and Skill Level</legend>
+        <p>Check the box(es) for the activity you are interested in.</p>			
+		<input type="checkbox" name="hiking" id="hiking" value="hiking"> 
+        <label for="hiking">Hiking;</label>
+        <label for="skill">Skill Level:</label>
+        <select id="skill">
+            <optgroup label="Skill Level">
+                <option value="skill1">Select One</option>
+                <option value="skill2">Beginer</option>
+                <option value="skill3">Intermediate</option>
+                <option value="skill4">Advanced</option>
+            </optgroup>
+        </select><br>
+
+        <input type="checkbox" name="backpacking" id="backpacking" value="backpacking"> 
+        <label for="backpacking">Backpacking;</label>
+        <label for="skill">Skill Level:</label>
+        <select id="skill">
+            <optgroup label="Skill Level">
+                <option value="skill1">Select One</option>
+                <option value="skill2">Beginer</option>
+                <option value="skill3">Intermediate</option>
+                <option value="skill4">Advanced</option>
+            </optgroup>
+        </select><br>    
+
+        <input type="checkbox" name="mountainbiking" id="mountainbiking" value="mountainbiking"> 
+        <label for="mountainbiking">Mountain Biking;</label>
+        <label for="skill">Skill Level:</label>
+        <select id="skill">
+            <optgroup label="Skill Level">
+                <option value="skill1">Select One</option>
+                <option value="skill2">Beginer</option>
+                <option value="skill3">Intermediate</option>
+                <option value="skill4">Advanced</option>
+            </optgroup>
+        </select><br>
+        </fieldset>
+
+        <fieldset id="equipment">
+            <legend>Equiptment Rentals</legend>
+                <p>Check the equipment you would like to rent. We will provide you with a list of rental stores in your area.</p>
+            <input type="checkbox" name="hiking" id="hiking" value="hiking"> 
+            <label for="hiking">Hiking</label>
+            <input type="checkbox" name="backpacking" id="backpacking" value="backpacking"> 
+            <label for="backpacking">Backpacking</label>
+            <input type="checkbox" name="mountainbiking" id="mountainbiking" value="mountainbiking"> 
+            <label for="mountainbiking">Mountain Biking</label>
+        </fieldset>
+
+        
+
+        <fieldset id="button">
+            <legend>Process your information</legend>
+            <input type="submit" name="Submit" id="submit" value="Submit">
+            <input type="reset" name="startover" id="startover" value="Start over"> 
+        </fieldset>
+		</form>
+    	</section>   
+    <aside class="sidelist">
+        <h2>Other Popular Trails</h2>
+        <ul>
+            <li><a href="https://www.alltrails.com/us/california/burbank" target="_blank"> Best trails in Burbank</a>
+                <img src="../images/burbank.webp" alt="Scout Camp and Stough Canyon Loop" height="50" width="50"></li>
+            <li><a href="https://www.alltrails.com/us/california/pasadena" target="_blank"> Best trails in Pasadena</a>
+                <img src="../images/pasadena.webp" alt="Switzer Falls via Gabrielino Trail" height="50" width="50"></li>
+            <li><a href="https://www.alltrails.com/us/california/malibu" target="_blank"> Best trails in Malibu</a>
+                <img src="../images/malibu.webp" alt="Solstice Canyon Loop" height="50" width="50"></li>
+            <li><img src="../images/santa_monica.webp" alt="Backbone Trail to Sandstone Peak and Mishe Mokwa Trail Loop" height="50" width="50">
+                <a href="https://www.alltrails.com/parks/us/california/santa-monica-mountains-national-recreation-area" target="_blank"> Best trails in Santa Monica</a></li>
+        </ul>
+    </aside>
+</main>	
+<footer>	
+    <p>&copy; 2024 LA County Adventures</p>
+    <p id="cred">Icons made by Freepik from www.flaticon.com are licensed by CC 3.0 BY<br>
+        Icons made by Smashicons from www.flaticon.com are licensed by CC 3.0 BY</p>
+</footer>
+
+</body>
+</html>
+
+
+
+    

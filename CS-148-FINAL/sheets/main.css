@@ -1,0 +1,253 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+	max-width: 1024px;
+    width: 95%;
+	margin: 0 auto; 
+	background-image: linear-gradient(
+	    30deg, goldenrod 0%, #d4b975 30%, #e2f6e8 50%, #d4b975 80%, goldenrod 100%);
+	border: 3px solid #374F2F;
+	box-shadow: 0px 20px 30px black;
+}
+
+.container { 
+	display: grid;
+	grid-template-columns: .5fr 1fr;
+	grid-template-rows: 8em 4em 52em 5em;
+	grid-template-areas: 
+		"header header"
+		"navbar navbar"
+		"sidelist main"
+		"footer footer";
+}
+
+.slicknav_menu {
+	display: none;
+	padding: 3px;
+}
+
+/*the styles for the header*/
+header {
+	grid-area: header;
+    width: 100%;
+	background-image: linear-gradient(
+	    30deg, #374F2F 0%, #aad2b5 30%, #e2f6e8 50%, #aad2b5 80%, #374F2F 100%);
+	border-bottom: 3px solid #374F2F;
+    padding: 1.5em 0 1.5em 0;
+
+}
+
+header h1 {
+	font-size: 250%;
+	color: goldenrod;
+	text-shadow: 3px 3px 4px black;
+	text-align: left;
+	font-style: italic;
+}
+
+header h2 {
+	font-size: 150%;
+	color: black;
+	padding-top: 10px;
+}
+
+header img { 
+	float: left;
+	padding: 0 30px 10px;
+}
+
+.navbar { grid-area: navbar;}
+
+.navbar ul {
+	list-style: none;
+	position: relative;
+    max-width: 1024px;
+	width: 100%;
+	
+}
+
+.navbar ul li { 
+	float: left; 
+	width: 25%;
+}
+.navbar ul ul { 
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+.navbar ul ul li {float: none;}
+.navbar ul li:hover > ul {
+	display: block
+}
+
+.navbar > ul::after { 
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*style for nav menu*/
+.navbar ul li a { 
+	text-align: center; 
+	display: block; 
+	padding: 0 -1em 0 1em;
+	text-decoration: none; 
+	background-color: #374F2F; 
+	color: white; 
+	font-weight: bold;
+}
+.navbar ul li a:hover {
+    background-color: #aad2b5;
+} 
+
+.navbar ul li #stress { 
+	color: gray;
+	background-color: #374F2F;
+}
+
+/*the styles for the main content*/
+main { 
+	clear: both;
+	grid-area: main;
+	display: grid;
+	grid-template-rows: min-content;
+	
+	
+}
+
+section {
+	width: 95%;          /* 565/1024 x 100 */
+	float: right;
+	padding: 0 20px 20px 5px;
+}
+
+section h1 {
+	font-size: 150%;
+	padding-top: 1em;
+	margin: auto;               /* If you remove this, the margins in normalize.css will be applied. */
+}
+section h2 {
+	color: #374F2F;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+section p {
+	padding-bottom: .5em;
+}
+
+section img {
+	float: inline-start;
+	width: 32px;
+	padding-right: 3px;
+	transition: width 2s ease-in-out;
+}
+
+main h1 { font-size: 170%;}
+main h2 { font-size: 140%;}
+main h3 { font-size: 120%;}
+
+main h1, h2, h3 { margin-bottom: .5em;}
+
+/* the styles for the aside */
+aside{
+	grid-area: sidelist;
+    float: left;
+    width: 95%;           /* 245/1024 x 100 */
+	padding-top: 1em;
+	margin-left: 1.5em;	
+}
+
+aside h2, #alist {display: grid;}
+
+aside h2{
+    color: black;
+	font-size: 150%;
+	padding: .5em 0 0em 0;
+}
+
+ul { 
+	line-height: 4em;
+	list-style-type: none;
+	
+}
+li { 
+	font-size: 100%;
+	font-weight: bold;
+}
+ul img {
+	display: inline;
+	float: left;
+	padding-right: 5px;
+}
+
+.sidelist ul li a { 
+	Color: #374F2F;
+	text-decoration: none;
+}
+.sidelist ul li a:hover, .sidelist ul li a:focus { 
+	color: #aad2b5;
+}
+
+/*the styles for the footer*/
+footer {
+	grid-area: footer;
+	background: #374F2F 100%;
+	padding: 15px;
+	clear: both;
+}
+
+footer p {
+	font-size: 80%;
+	text-align: center;
+    color: white;
+}
+#cred { 
+	padding-top: 5px;
+	color: black;
+}
+
+
+
+/* media query for 767px */
+@media only screen and (max-width: 767px) {
+	.container { 
+		border: 2px solid steelblue;
+		border-width: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: .2fr .1fr .5fr .3fr .08fr;
+		grid-template-areas: 
+			"header"
+			"navbar"
+			"main"
+			"sidelist"
+			"footer";
+	}
+	body {
+		box-shadow: none;
+	}
+	
+	
+	.navbar {display: none;}
+	.slicknav_menu {display: block;}
+	header img { 
+		width: auto;
+		height: auto;
+	}
+	.sidelist {
+		float: none;
+		width: 100%;
+		margin: 1em;
+	}
+	section {width: 95%;}
+
+	
+}
